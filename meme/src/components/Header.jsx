@@ -1,15 +1,15 @@
-import React from 'react'
+import React from "react"
+import header_image from "../images/troll-face.png" 
 
-const Header = () => {
-  return (
-
-        <header>
-            <img src = "" alt = "" />
-            <h1>Header Component</h1>
-            <h4>React -Project 3</h4>
+export default function Header() {
+    return (
+        <header className="header">
+            <img 
+                src= {header_image}
+                className="header--image"
+            />
+            <h2 className="header--title">Meme Generator</h2>
+            <h4 className="header--project">React Project</h4>
         </header>
-
     )
 }
-
-export default Header
